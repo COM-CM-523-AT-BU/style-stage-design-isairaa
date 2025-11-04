@@ -2,7 +2,7 @@
  * [Modified] Modern CSS Reset
  * @link https://github.com/hankchizljaw/modern-css-reset
 */
-* Box sizing rules */
+/* Box sizing rules */
 *,
 *::before,
 *::after {
@@ -36,14 +36,14 @@ body {
 /* Remove all animations and transitions for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
+    animation-duration: 0.01ms;
+    animation-iteration-count: 1;
+    transition-duration: 0.01ms;
+    scroll-behavior: auto;
   }
 }
 
-/* ===== Begin theme styles ===== */
+/* Begin theme styles */
 
 :root {
   --strawberry: #ff6b6b;
@@ -321,10 +321,10 @@ li {
 
 
 .link-guidelines,
-.link-downloadcss,
-.link-downloadhtml,
-.link-codepen,
-.link-allstyles {
+.link-download-css,
+.link-download-html,
+.link-code-pen,
+.link-all-styles {
   display: inline-block;
   padding: 1rem 2rem;
   margin: 0.5rem;
@@ -339,31 +339,31 @@ li {
   color: var(--text-dark);
 }
 
-.link-downloadcss {
+.link-download-css {
   background: linear-gradient(135deg, var(--strawberry), var(--watermelon));
   color: var(--text-light);
 }
 
-.link-downloadhtml {
+.link-download-html {
   background: linear-gradient(135deg, var(--orange), var(--banana));
   color: var(--text-dark);
 }
 
-.link-codepen {
+.link-code-pen {
   background: linear-gradient(135deg, var(--blueberry), var(--grape));
   color: var(--text-light);
 }
 
-.link-allstyles {
+.link-all-styles {
   background: linear-gradient(135deg, var(--grape), var(--watermelon));
   color: var(--text-light);
 }
 
 .link-guidelines:hover,
-.link-downloadcss:hover,
-.link-downloadhtml:hover,
-.link-codepen:hover,
-.link-allstyles:hover {
+.link-download-css:hover,
+.link-download-html:hover,
+.link-code-pen:hover,
+.link-all-styles:hover {
   transform: translateY(-3px);
   box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
 }
